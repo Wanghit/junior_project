@@ -54,8 +54,9 @@ def login():
 @app.route('/log/<level>/<msg>')
 def log(level,msg):
     dict={'warn':logging.WARN,'error':logging.ERROR,'info':logging.INFO}
-    if dict.has_key(level)
-        app.logger.
+    if dict.has_key(level):
+        app.logger.log(dict[level],msg)
+    return 'logged:'+msg
 def set_logger():
     info_file_handler=RotatingFileHandler('C:\\Users\\Administrator\\Desktop\\info.txt')
     info_file_handler.setLevel(logging.INFO)
