@@ -193,5 +193,5 @@ if __name__=='__main__':
       #demo_list()
       #demo_dict()
       #demo_set()
-      demo_randow()
+      #demo_randow()
      demo_re()
